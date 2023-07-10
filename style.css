@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+}
+
+ :root {
+    --navbar-height: 60px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12px;
+}
+
+.navigation::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.22;
+}
+
+
+/* .btn {
+    border: 5px solid black;
+    margin: 12px;
+    padding: 10px;
+    justify-content: center;
+} */
+
+.navbar li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px 11px;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-style: revert;
+}
+
+.navbar li:hover {
+    color: black;
+    background-color: lavender;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.home::before {
+    content: "";
+    background: url(img/back\ \(1\).jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 367px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: ; */
+}
+
+.home h2 {
+    color: #ffafa9;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.2rem;
+    padding: 43px;
+}
+
+.home p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.3rem;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+}
+
+.food {
+    border: 3px coral solid;
+    background-color: rgb(240, 225, 203);
+    margin: 10px;
+    border-radius: 15px;
+    height: auto;
+}
+
+.menu img {
+    padding: 20px 20px;
+    height: 184px;
+    width: 259px;
+    border-radius: 5px;
+}
+
+.food p {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 12px;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.food h4 {
+    font-size: 21px;
+    margin: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form {
+    /* border: 2px solid violet; */
+    /* position: relative; */
+}
+
+#form::before {
+    content: "";
+    background: url(img/back2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    height: 103px;
+}
+
+.form-box label {
+    font-size: 1.7rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 5px;
+}
+
+.form-box input {
+    width: 58%;
+    padding: 13px;
+    border-radius: 21px;
+    font-size: 1.5rem;
+}
+
+input.qnt {
+    width: 28%;
+    height: 35%;
+}
+
+select#Pizza {
+    cursor: pointer;
+    width: 582px;
+    padding: 14px;
+    margin: 18px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+}
+
+select#Burgers {
+    cursor: pointer;
+    width: 582px;
+    padding: 14px;
+    margin: 18px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+}
+
+select#Beverages {
+    cursor: pointer;
+    width: 582px;
+    padding: 14px;
+    margin: 18px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+}
+
+option.opt {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 17px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(42, 165, 93);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
